@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="home">
+
+	<div data-role="header">
+		<a href="#myPopup1" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a>
+
+		<div data-role="popup" id="myPopup1" style="min-width:200px;">
+			<ul data-role="listview">
+  				<li data-icon="false"><a href="#home">Home</a></li>
+  				<li data-icon="false"><a href="#page2">View Map</a></li>
+				<li data-icon="false"><a href="#page3">Slide Panel</a></li>
+				<li data-icon="false"><a href="#page4">Collapsible</a></li>
+			</ul>
+		</div>
+
+		<h1>Scott's</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+			<h1>Welcome to Scott's Restaurant</h1>
+    		<p>Situated in the busy heart of Melbourne, Scott's Restaurant has been a mainstay in the Melbourne community for the past 10 years, serving up some of the finest in both local and international cuisine.</p>
+			<p>With it's spacious and family-friendly indoor and outdoor eating areas, licensed bar and weekly live music acts, you can be sure that your experience will be an enjoyable one.</p>
+			<a href="#myImagePopup1" data-rel="popup" data-position-to="window">
+				<img src="images/scotts1.jpg" alt="City So Nice They Named it Twice" style="width:200px;">
+			</a><br />
+			<small>Click to enlarge</small>
+			
+			<div data-role="popup" id="myImagePopup1" data-overlay-theme="b">
+      			<p>Scott's Restaurant outdoor facade</p> 
+      			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/scotts1.jpg" alt="Scott's Restaurant outdoor facade">
+    		</div>
+ 	 </div>
+
+  	<div data-role="footer">
+    		<h1>&copy; Scott's Restaurant 2015</h1>
+  	</div>
+</div>
+
+<div data-role="page" id="page2"> 
+	
+	<div data-role="header">
+		<a href="#myPopup2" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a>
+
+		<div data-role="popup" id="myPopup2" style="min-width:200px;">
+  			<ul data-role="listview">
+  				<li data-icon="false"><a href="#home">Home</a></li>
+  				<li data-icon="false"><a href="#page2">View Map</a></li>
+				<li data-icon="false"><a href="#page3">Slide Panel</a></li>
+				<li data-icon="false"><a href="#page4">Collapsible</a></li>
+			</ul>
+		</div>
+
+		<h1>Scott's</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+    		<a href="#myMapPopup1" data-rel="popup" data-position-to="window">
+    		<img src="images/map.jpg" alt="Scott's restaurant map" style="width:200px;"></a><br />
+			<p>Click for an interactive map.</p>
+
+    		<div data-role="popup" id="myMapPopup1" data-overlay-theme="b">
+      			<p>Scott's Restaurant - Google map</p> 
+      			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787.9830419901197!2d144.96110565276302!3d-37.81505778895663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4b347cbd21%3A0x408bbd5fe6ebb99f!2s443+Bourke+St%2C+Melbourne+VIC+3000!5e0!3m2!1sen!2sau!4v1440569707279" width="450" height="335" frameborder="0" style="border:0" allowfullscreen></iframe>
+    		</div>
+ 	 </div>
+
+  	<div data-role="footer">
+    		<h1>&copy; Scott's Restaurant 2015</h1>
+  	</div>
+</div>
+
+<div data-role="page" id="page3">
+
+	<div data-role="panel" id="myPanel"> 
+    		<h2>My Panel</h2>
+    		<p>Close the panel by clicking or tapping outside the panel, or by swiping.</p>
+  	</div>
+	
+	<div data-role="header">
+		<a href="#myPopup3" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a>
+
+		<div data-role="popup" id="myPopup3" style="min-width:200px;">
+  			<ul data-role="listview">
+  				<li data-icon="false"><a href="#home">Home</a></li>
+  				<li data-icon="false"><a href="#page2">View Map</a></li>
+				<li data-icon="false"><a href="#page3">Slide Panel</a></li>
+				<li data-icon="false"><a href="#page4">Collapsible</a></li>
+			</ul>
+		</div>
+
+		<h1>Scott's</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+    		<p>Click on this button to open the slide out Panel.</p>
+    		<a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">Open Panel</a>
+ 	</div>
+
+  	<div data-role="footer">
+    		<h1>&copy; Scott's Restaurant 2015</h1>
+  	</div>
+</div>
+
+<div data-role="page" id="page4">
+	
+	<div data-role="header">
+		<a href="#myPopup4" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a>
+
+		<div data-role="popup" id="myPopup4" style="min-width:200px;">
+  			<ul data-role="listview">
+  				<li data-icon="false"><a href="#home">Home</a></li>
+  				<li data-icon="false"><a href="#page2">View Map</a></li>
+				<li data-icon="false"><a href="#page3">Slide Panel</a></li>
+				<li data-icon="false"><a href="#page4">Collapsible</a></li>
+			</ul>
+		</div>
+
+		<h1>Scott's</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+    		<div data-role="collapsible">
+      			<h1>Click to view the expanded content</h1>
+      			<p>Expanded content</p>
+    		</div>
+ 	 </div>
+
+  	<div data-role="footer">
+    		<h1>&copy; Scott's Restaurant 2015</h1>
+  	</div>
+</div>
+
+</body>
+</html>
